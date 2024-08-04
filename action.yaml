@@ -1,0 +1,16 @@
+name: "Podcast Generator"
+author: "Gianni-Lauritz Grubert"
+
+runs:
+  using: "Docker"
+  image: "Dockerfile"
+inputs:
+  email:
+    description: The Commiter Email Address
+    required: true
+    default: ${{ github.actor }}@localhost
+  name:
+    description: The Commiter Name
+    required: true
+    default: ${{ github.actor }}
+    
