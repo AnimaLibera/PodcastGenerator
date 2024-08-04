@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get -y install \
   python3.10 \
-  python3-pipx \
+  pipx \
   git
 
 RUN pipx install PyYAML
